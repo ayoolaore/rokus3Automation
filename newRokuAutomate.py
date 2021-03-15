@@ -114,18 +114,7 @@ def jsonProcess():
 # context = yesno()
 # if context == True:
 # content()
-'''def upload():
-    s3 = boto3.resource('s3',
-                        aws_access_key_id='AKIAQ5G23FWMXLRVSKXR',
-                        aws_secret_access_key='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')
-    s3object = s3.Object('rokucotr', 'Json Files/data.json')
 
-    s3object.put(
-        Body=(bytes(data.encode('UTF-8'))),
-        ContentType='application/json',
-        ACL='public-read'
-    )
-    print("file merged and uploaded to S3, SUCESS!!!")'''
 
 
 def main():
