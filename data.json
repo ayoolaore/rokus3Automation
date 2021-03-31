@@ -1,6 +1,6 @@
 {
     "providerName": "Church of the Rock",
-    "lastUpdated": "2021-03-11T18:05:37-05:00",
+    "lastUpdated": "2021-03-29T17:04:51-04:00",
     "language": "",
     "Worship Songs": [
         {
@@ -1079,7 +1079,109 @@
                         "url": "https:\\/\\/player.vimeo.com\\/external\\/522467522.hd.mp4?s=4d836033ebed40577c9286a1c750977c5a66a190&profile_id=175",
                         "quality": "FHD",
                         "videoType": "MP4",
-                        "bitrate": 5059552
+                        "bitrate": 5055202
+                    }
+                ]
+            }
+        },
+        {
+            "id": "525070027",
+            "title": "Transformations_CrashCourseInCreeds_02_VOD",
+            "shortDescription": "Transformations_CrashCourseInCreeds_02_VOD",
+            "thumbnail": "https:\\/\\/i.vimeocdn.com\\/video\\/1087324023_800x450.png",
+            "releaseDate": "2021-03-17T13:49:42-04:00",
+            "genres": [
+                ""
+            ],
+            "tags": [
+                ""
+            ],
+            "content": {
+                "dateAdded": "2021-03-17T14:00:33-04:00",
+                "duration": 2308,
+                "videos": [
+                    {
+                        "url": "https:\\/\\/player.vimeo.com\\/external\\/525070027.hd.mp4?s=377d0028b83a9785661c1acb53402ba08b1956c0&profile_id=175",
+                        "quality": "FHD",
+                        "videoType": "MP4",
+                        "bitrate": 5092842
+                    }
+                ]
+            }
+        },
+        {
+            "id": "528146185",
+            "title": "Transformations_CrashCourseInCreeds_03_VOD",
+            "shortDescription": "Transformations_CrashCourseInCreeds_03_VOD",
+            "thumbnail": "https:\\/\\/i.vimeocdn.com\\/video\\/1093200630_800x450.png",
+            "releaseDate": "2021-03-24T00:39:23-04:00",
+            "genres": [
+                ""
+            ],
+            "tags": [
+                ""
+            ],
+            "content": {
+                "dateAdded": "2021-03-24T00:52:47-04:00",
+                "duration": 2113,
+                "videos": [
+                    {
+                        "url": "https:\\/\\/player.vimeo.com\\/external\\/528146185.hd.mp4?s=e1fa885b8769350158832f4c855570e3e761ed23&profile_id=175",
+                        "quality": "FHD",
+                        "videoType": "MP4",
+                        "bitrate": 5348807
+                    }
+                ]
+            }
+        },
+        {
+            "id": "530990150",
+            "title": "Transformations_CrashCourseInCreeds_04_VOD",
+            "shortDescription": "Transformations_CrashCourseInCreeds_04_VOD",
+            "thumbnail": "https:\\/\\/i.vimeocdn.com\\/video\\/1099036708_800x450.png",
+            "releaseDate": "2021-03-30T17:28:39-04:00",
+            "genres": [
+                ""
+            ],
+            "tags": [
+                ""
+            ],
+            "content": {
+                "dateAdded": "2021-03-30T17:41:39-04:00",
+                "duration": 1942,
+                "videos": [
+                    {
+                        "url": "https:\\/\\/player.vimeo.com\\/external\\/530990150.hd.mp4?s=2f2917fce5417780bedbb4154deef4144e4fa338&profile_id=175",
+                        "quality": "FHD",
+                        "videoType": "MP4",
+                        "bitrate": 5345746
+                    }
+                ]
+            }
+        }
+    ],
+    "A Brave New World": [
+        {
+            "id": "530498130",
+            "title": "2021.03.28_ABraveNewWorld_Week01_SermonStudy.mp4",
+            "shortDescription": "2021.03.28_ABraveNewWorld_Week01_SermonStudy.mp4",
+            "thumbnail": "https:\\/\\/i.vimeocdn.com\\/video\\/1098048620_800x450.png",
+            "releaseDate": "2021-03-29T16:48:26-04:00",
+            "genres": [
+                ""
+            ],
+            "tags": [
+                ""
+            ],
+            "content": {
+                "dateAdded": "2021-03-29T17:04:25-04:00",
+                "duration": 546,
+                "videos": [
+                    {
+                        "url": "https:\\/\\/player.vimeo.com\\/external\\/530498130.hd.mp4?s=425b6b0d886060a96d4995b268a8b9dad9d68fce&profile_id=175",
+                        "quality": "FHD",
+                        "videoType": "MP4",
+                        "bitrate": 5461338
                     }
                 ]
             }
