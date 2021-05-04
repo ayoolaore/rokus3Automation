@@ -1,5 +1,8 @@
+from typing import TextIO
+
 import boto3
 import json
+import sys
 import urllib
 import validators
 import requests
@@ -14,7 +17,7 @@ stringWord = ""
 '''
 read keys in 
 '''
-accessKeysfile = open("accessKey.txt", "r")
+accessKeysfile = open('accessKey.txt', "r")
 secretKeysfile = open("secretKey.txt", "r")
 
 access_key_id = accessKeysfile.read()
@@ -31,9 +34,9 @@ def yesno():
     if ans not in ['y', 'n', 'exit', 'd']:
         print(f'{ans} is invalid, please try again...')
         return yesno()
-    if ans == 'y':
+    elif ans == 'y':
         return True
-    if ans == 'd':
+    elif ans == 'd':
         ans2 = input("Are you sure you want to delete an item y/n \n")
         if ans2 == 'y':
 
@@ -42,8 +45,8 @@ def yesno():
             deleteContent(deleteTitle)
         else:
             yesno()
-    if ans == 'exit':
-        return False
+    elif ans == 'exit':
+        sys.exit("Exited")
     return False
 
 
@@ -98,7 +101,8 @@ def processUrl(url, title):
     string = string[1:-1]
     string = string.replace("shortFormVideos", title)
     string = string.replace("movies", title)
-    dataList1 = eval(string)
+    dataList1 = json.loads(string)
+    #print(dataList1)
     dataList.update(dataList1)
     #return string #returns string of content from url after replacing title
     # print(urls)
@@ -116,9 +120,11 @@ def parseThrough():
 
 def jsonProcess():
     parseThrough()
+    #print(dataList)
     #data = json.loads(string)
     data = json.dumps(dataList, indent=4)
-    f = open("data.json", "w")
+    #print(dataList)
+    f = open("data.json", "w", encoding='utf8')
     f.write(data)
     f.close()
     return data
@@ -130,10 +136,13 @@ def jsonProcess():
 # content()
 
 def deleteContent(deleteTitle):
-    with open("data.json", 'w') as file:
+    with open("data.json", 'r+') as file:
+    #file = open("rokuAutomate/data.json", 'r+')
         dataFile = json.load(file)
         result = dataFile.pop(deleteTitle, None)
-        print(f"{result} is now deleted from channel")
+        print(f"{result} is now deleted from channel from {dataFile}")
+        #file.write(dataFile)
+        json.dump(dataFile, file, indent=4)
 
 def uploadContent():
     s3 = boto3.resource('s3',
