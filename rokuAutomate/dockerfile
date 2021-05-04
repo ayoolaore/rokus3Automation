@@ -1,0 +1,6 @@
+FROM python:3
+WORKDIR C:\Users\ayoola\PycharmProjects\pythonProject\rokuAutomate
+COPY . .
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["newRokuAutomate.py"]
+ENTRYPOINT ["python3"]
